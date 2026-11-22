@@ -6,6 +6,11 @@ authors:
     given-names: Jannik
 date-released: 2026-11-22
 version: 1.0.0
+doi: 10.5281/zenodo.24442070
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24442069
+    description: Concept DOI (all versions)
 license: CC-BY-4.0
 repository-code: "https://github.com/Siekwie/new-sorting-networks-n49-n62"
 keywords:

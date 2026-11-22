@@ -1,5 +1,7 @@
 # New sorting networks for n = 49 to 62
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24442070.svg)](https://doi.org/10.5281/zenodo.24442070)
+
 Eleven sorting networks that are not dominated by any entry in Bert Dobbelaere's
 [extended list of sorting networks](https://bertdobbelaere.github.io/sorting_networks_extended.html)
 as of its version "Page updated on Fri Nov 20 20:53:00 2026" (fetched 2026-11-22).
@@ -134,4 +136,7 @@ CC BY 4.0. The networks build on networks from Bert Dobbelaere's list and on
 
 ## Citation
 
-See [CITATION.cff](CITATION.cff). The archived version on Zenodo has a DOI.
+Jannik Wiest, *New sorting networks for n = 49 to 62*, v1.0.0, Zenodo, 2026.
+DOI [10.5281/zenodo.24442070](https://doi.org/10.5281/zenodo.24442070)
+(all versions: [10.5281/zenodo.24442069](https://doi.org/10.5281/zenodo.24442069)).
+See also [CITATION.cff](CITATION.cff).
