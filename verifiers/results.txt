@@ -1,0 +1,221 @@
+=== n49_368_20 (n=49)
+[1 rv_prefix_product, cap 16]
+checked=30758 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=27846 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n49_368_20.txt: 30758 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 30758 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 30758 vectors of the exact prefix-output product (covers all 2^49 inputs)
+[6 check_np.py, cap 16]
+n49_368_20.txt: n=49 size=368 depth=20 lines=20 format_ok=True file_is_asap=True prefix=165 groups=[12, 12, 12, 13] outs=[13, 13, 13, 14] product=30758 checked=30758 unsorted=0 -> SORTS
+[7 sat_check.py]
+n49_368_20.txt: vars=833 clauses=2305 -> UNSAT (sorts) in 0.0s
+[random_test.py, sanity only]
+n49_368_20.txt: 20000 random inputs, 0 unsorted
+=== n50_375_24 (n=50)
+[1 rv_prefix_product, cap 16]
+checked=33124 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=31164 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n50_375_24.txt: 33124 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 33124 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 33124 vectors of the exact prefix-output product (covers all 2^50 inputs)
+[6 check_np.py, cap 16]
+n50_375_24.txt: n=50 size=375 depth=24 lines=24 format_ok=True file_is_asap=True prefix=168 groups=[12, 13, 12, 13] outs=[13, 14, 13, 14] product=33124 checked=33124 unsorted=0 -> SORTS
+[7 sat_check.py]
+n50_375_24.txt: vars=849 clauses=2349 -> UNSAT (sorts) in 0.1s
+[random_test.py, sanity only]
+n50_375_24.txt: 20000 random inputs, 0 unsorted
+=== n55_431_22 (n=55)
+[1 rv_prefix_product, cap 16]
+checked=41616 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=40460 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n55_431_22.txt: 41616 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 41616 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 41616 vectors of the exact prefix-output product (covers all 2^55 inputs)
+[6 check_np.py, cap 16]
+n55_431_22.txt: n=55 size=431 depth=22 lines=22 format_ok=True file_is_asap=True prefix=195 groups=[15, 16, 8, 16] outs=[16, 17, 9, 17] product=41616 checked=41616 unsorted=0 -> SORTS
+[7 sat_check.py]
+n55_431_22.txt: vars=971 clauses=2695 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n55_431_22.txt: 20000 random inputs, 0 unsorted
+=== n57_453_24 (n=57)
+[1 rv_prefix_product, cap 16]
+checked=52598 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=52598 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n57_453_24.txt: 52598 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 52598 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 52598 vectors of the exact prefix-output product (covers all 2^57 inputs)
+[6 check_np.py, cap 16]
+n57_453_24.txt: n=57 size=453 depth=24 lines=24 format_ok=True file_is_asap=True prefix=204 groups=[12, 13, 16, 16] outs=[13, 14, 17, 17] product=52598 checked=52598 unsorted=0 -> SORTS
+[7 sat_check.py]
+n57_453_24.txt: vars=1019 clauses=2831 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n57_453_24.txt: 20000 random inputs, 0 unsorted
+=== n57_457_20 (n=57)
+[1 rv_prefix_product, cap 16]
+checked=52598 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=52598 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n57_457_20.txt: 52598 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 52598 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 52598 vectors of the exact prefix-output product (covers all 2^57 inputs)
+[6 check_np.py, cap 16]
+n57_457_20.txt: n=57 size=457 depth=20 lines=20 format_ok=True file_is_asap=True prefix=207 groups=[12, 13, 16, 16] outs=[13, 14, 17, 17] product=52598 checked=52598 unsorted=0 -> SORTS
+[7 sat_check.py]
+n57_457_20.txt: vars=1027 clauses=2855 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n57_457_20.txt: 20000 random inputs, 0 unsorted
+=== n58_464_24 (n=58)
+[1 rv_prefix_product, cap 16]
+checked=54043 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=54043 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n58_464_24.txt: 54043 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 54043 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 54043 vectors of the exact prefix-output product (covers all 2^58 inputs)
+[6 check_np.py, cap 16]
+n58_464_24.txt: n=58 size=464 depth=24 lines=24 format_ok=True file_is_asap=True prefix=209 groups=[10, 16, 16, 16] outs=[11, 17, 17, 17] product=54043 checked=54043 unsorted=0 -> SORTS
+[7 sat_check.py]
+n58_464_24.txt: vars=1043 clauses=2899 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n58_464_24.txt: 20000 random inputs, 0 unsorted
+=== n60_487_20 (n=60)
+[1 rv_prefix_product, cap 16]
+checked=65536 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=65536 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n60_487_20.txt: 65536 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 65536 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 65536 vectors of the exact prefix-output product (covers all 2^60 inputs)
+[6 check_np.py, cap 16]
+n60_487_20.txt: n=60 size=487 depth=20 lines=20 format_ok=True file_is_asap=True prefix=228 groups=[15, 15, 15, 15] outs=[16, 16, 16, 16] product=65536 checked=65536 unsorted=0 -> SORTS
+[7 sat_check.py]
+n60_487_20.txt: vars=1093 clauses=3041 -> UNSAT (sorts) in 0.1s
+[random_test.py, sanity only]
+n60_487_20.txt: 20000 random inputs, 0 unsorted
+=== n61_496_24 (n=61)
+[1 rv_prefix_product, cap 16]
+checked=68782 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=68782 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n61_496_24.txt: 68782 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 68782 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 68782 vectors of the exact prefix-output product (covers all 2^61 inputs)
+[6 check_np.py, cap 16]
+n61_496_24.txt: n=61 size=496 depth=24 lines=24 format_ok=True file_is_asap=True prefix=225 groups=[13, 16, 16, 16] outs=[14, 17, 17, 17] product=68782 checked=68782 unsorted=0 -> SORTS
+[7 sat_check.py]
+n61_496_24.txt: vars=1113 clauses=3097 -> UNSAT (sorts) in 0.3s
+[random_test.py, sanity only]
+n61_496_24.txt: 20000 random inputs, 0 unsorted
+=== n61_497_21 (n=61)
+[1 rv_prefix_product, cap 16]
+checked=68782 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=68782 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n61_497_21.txt: 68782 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 68782 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 68782 vectors of the exact prefix-output product (covers all 2^61 inputs)
+[6 check_np.py, cap 16]
+n61_497_21.txt: n=61 size=497 depth=21 lines=21 format_ok=True file_is_asap=True prefix=225 groups=[13, 16, 16, 16] outs=[14, 17, 17, 17] product=68782 checked=68782 unsorted=0 -> SORTS
+[7 sat_check.py]
+n61_497_21.txt: vars=1115 clauses=3103 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n61_497_21.txt: 20000 random inputs, 0 unsorted
+=== n61_501_20 (n=61)
+[1 rv_prefix_product, cap 16]
+checked=68782 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=68782 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n61_501_20.txt: 68782 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 68782 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 68782 vectors of the exact prefix-output product (covers all 2^61 inputs)
+[6 check_np.py, cap 16]
+n61_501_20.txt: n=61 size=501 depth=20 lines=20 format_ok=True file_is_asap=True prefix=229 groups=[13, 16, 16, 16] outs=[14, 17, 17, 17] product=68782 checked=68782 unsorted=0 -> SORTS
+[7 sat_check.py]
+n61_501_20.txt: vars=1123 clauses=3127 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n61_501_20.txt: 20000 random inputs, 0 unsorted
+=== n62_510_20 (n=62)
+[1 rv_prefix_product, cap 16]
+checked=73984 unsorted=0 => SORTS
+[2 rv_prefix_product_cap24]
+tested=73984 bad=0 => SORTS
+[3 vf, cap 16]
+networks/n62_510_20.txt: 73984 vectors, 0 unsorted -> SORTS
+[4 verify_swap, cap 16]
+checked 73984 vectors: PASS
+[5 verify_A1, cap 16]
+PASS: tail sorts all 73984 vectors of the exact prefix-output product (covers all 2^62 inputs)
+[6 check_np.py, cap 16]
+n62_510_20.txt: n=62 size=510 depth=20 lines=20 format_ok=True file_is_asap=True prefix=236 groups=[15, 16, 15, 16] outs=[16, 17, 16, 17] product=73984 checked=73984 unsorted=0 -> SORTS
+[7 sat_check.py]
+n62_510_20.txt: vars=1143 clauses=3183 -> UNSAT (sorts) in 0.2s
+[random_test.py, sanity only]
+n62_510_20.txt: 20000 random inputs, 0 unsorted
+=== controls/broken57_452 (n=57)
+[1 rv_prefix_product, cap 16]
+checked=52598 unsorted=536 => FAIL
+[2 rv_prefix_product_cap24]
+tested=52598 bad=536 => FAIL
+[3 vf, cap 16]
+networks/controls/broken57_452.txt: 52598 vectors, 536 unsorted -> FAIL
+[4 verify_swap, cap 16]
+checked 52598 vectors: FAIL
+[5 verify_A1, cap 16]
+FAIL: unsorted output found
+[6 check_np.py, cap 16]
+broken57_452.txt: n=57 size=452 depth=24 lines=24 format_ok=True file_is_asap=True prefix=204 groups=[12, 13, 16, 16] outs=[13, 14, 17, 17] product=52598 checked=52598 unsorted=536 -> FAIL
+[7 sat_check.py]
+broken57_452.txt: vars=1017 clauses=2825 -> SAT (UNSORTED input exists) in 0.0s
+[random_test.py, sanity only]
+broken57_452.txt: 20000 random inputs, 2614 unsorted
+=== controls/broken61_495 (n=61)
+[1 rv_prefix_product, cap 16]
+checked=68782 unsorted=534 => FAIL
+[2 rv_prefix_product_cap24]
+tested=68782 bad=534 => FAIL
+[3 vf, cap 16]
+networks/controls/broken61_495.txt: 68782 vectors, 534 unsorted -> FAIL
+[4 verify_swap, cap 16]
+checked 68782 vectors: FAIL
+[5 verify_A1, cap 16]
+FAIL: unsorted output found
+[6 check_np.py, cap 16]
+broken61_495.txt: n=61 size=495 depth=24 lines=24 format_ok=True file_is_asap=False prefix=225 groups=[13, 16, 16, 16] outs=[14, 17, 17, 17] product=68782 checked=68782 unsorted=534 -> FAIL
+[7 sat_check.py]
+broken61_495.txt: vars=1111 clauses=3091 -> SAT (UNSORTED input exists) in 0.1s
+[random_test.py, sanity only]
+broken61_495.txt: 20000 random inputs, 5062 unsorted

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these networks, please cite them as below."
+title: "New sorting networks for n = 49 to 62"
+authors:
+  - family-names: Wiest
+    given-names: Jannik
+date-released: 2026-11-22
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/Siekwie/new-sorting-networks-n49-n62"
+keywords:
+  - sorting networks
+  - comparator networks
+  - SorterHunter
+abstract: >-
+  Eleven sorting networks for 49 to 62 inputs that are not dominated by any entry in
+  Bert Dobbelaere's list of sorting networks (version of 2026-11-20). New size upper bounds:
+  n=50 (375 CEs), n=55 (431), n=57 (453), n=58 (464), n=61 (496). New (size, depth) pairs:
+  (49,368,20), (57,457,20), (60,487,20), (61,497,21), (61,501,20), (62,510,20).
+  Includes exact verifiers (0-1 principle prefix product and SAT), search configs and logs.

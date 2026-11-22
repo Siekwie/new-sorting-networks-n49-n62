@@ -1,0 +1,103 @@
+--- a/SorterHunter.cpp	2026-11-21 18:20:25.461481600 +0100
++++ b/SorterHunter.cpp	2026-11-21 18:39:56.127171700 +0100
+@@ -325,7 +325,7 @@
+ 	SortWord_t sizetmp=createGreedyPrefix(N, npairs, use_symmetry, prefix, mtRand);
+ 	if( Verbosity > 1)
+ 	{
+-		printf("Greedy prefix size %lu, span %lu.\n",prefix.size(),(size_t)sizetmp);
++		printf("Greedy prefix size %zu, span %zu.\n",prefix.size(),(size_t)sizetmp);
+ 	}
+ }
+ 
+@@ -340,7 +340,7 @@
+ 	SortWord_t sizetmp=createGreedyPrefix(N, npairs+prefix.size(), use_symmetry, prefix, mtRand);
+ 	if( Verbosity > 2)
+ 	{
+-		printf("Hybrid prefix size %lu, span %lu.\n",prefix.size(),(size_t)sizetmp);
++		printf("Hybrid prefix size %zu, span %zu.\n",prefix.size(),(size_t)sizetmp);
+ 	}
+ }
+ 
+@@ -503,7 +503,7 @@
+ 		/* Print only if the sorter is an improved (size,depth) combination */
+ 		if((Verbosity > 1) || (nw.size() <= ((N*(N-1u))/2u))) // Reduce rubbish listing. Should at least compete with bubble sort before reporting
+ 		{
+-			printf(" {'N':%u,'L':%lu,'D':%u,'sw':'%s','ESC':%u,'Prefix':%lu,'Postfix':%lu,'nw':",N,nw.size(),depth,VERSION,EscapeRate,prefix.size(),postfix.size());
++			printf(" {'N':%u,'L':%zu,'D':%u,'sw':'%s','ESC':%u,'Prefix':%zu,'Postfix':%zu,'nw':",N,nw.size(),depth,VERSION,EscapeRate,prefix.size(),postfix.size());
+ 			printnw(nw); 
+ 			conv_hull.print();
+ 		}
+@@ -513,6 +513,7 @@
+ /**
+  * General help message
+  */
++int main2(int argc, char *argv[]);
+ static void usage()
+ {
+ 	printf("Usage: SorterHunter <config_file_name>\n\n");
+@@ -533,7 +534,8 @@
+ /**
+  * SorterHunter main routine
+  */
+-int main(int argc, char *argv[])
++int main(int argc, char *argv[]) { setvbuf(stdout,NULL,_IONBF,0); return main2(argc,argv); }
++int main2(int argc, char *argv[])
+ {
+ 	/* Handle validity of command line options - extremely simple */
+ 	if(argc!=2)
+@@ -614,7 +616,7 @@
+ 
+ 	if(Verbosity > 0)
+ 	{
+-		printf("Prefix size: %lu\n",prefix.size());
++		printf("Prefix size: %zu\n",prefix.size());
+ 	}
+ 	
+ 	/* Prepare a set of test vectors matching the prefix */
+@@ -674,13 +676,16 @@
+ 
+ 		if(Verbosity>1)
+ 		{
+-			printf("Initial network size: %lu\n",totalnw.size());
++			printf("Initial network size: %zu\n",totalnw.size());
+ 		}
+ 		
+ 		checkImproved(totalnw);
+ 
+ 		for(;;) // Program never ends, keep trying to improve, we may restart in the outer loop however.
+ 		{
++			{ static uint64_t tl_cnt=0; static time_t tl_t0=time(NULL); static long tl_lim=-2;
++			  if(tl_lim==-2){ const char*e=getenv("SH_TIMELIMIT"); tl_lim= e? atol(e):-1; }
++			  if(tl_lim>0 && ((++tl_cnt)&0xFFFF)==0 && time(NULL)-tl_t0>=tl_lim){ printf("TIMELIMIT reached after %llu iterations\n",(unsigned long long)tl_cnt); exit(0);} }
+ 			if(Verbosity>2)
+ 			{
+ 				itercount++;
+@@ -692,7 +697,7 @@
+ 					{
+ 						double t=(t2-t0)/(double)CLOCKS_PER_SEC;
+ 						double dt=(t2-t1)/(double)CLOCKS_PER_SEC;
+-						printf("Iteration %lu  t=%.3lf s     %.1lf it/s\n", itercount, t,  (iter_next_report-iter_last_report)/dt ); 
++						printf("Iteration %zu  t=%.3lf s     %.1lf it/s\n", itercount, t,  (iter_next_report-iter_last_report)/dt ); 
+ 					}
+ 					
+ 					t1=t2;
+--- a/prefix_processor.cpp	2026-11-21 18:20:25.465481200 +0100
++++ b/prefix_processor.cpp	2026-11-21 18:23:11.608988000 +0100
+@@ -442,7 +442,7 @@
+ 
+ 	if(Verbosity > 2)
+ 	{
+-		printf("Debug: Pattern conversion: %lu single inputs -> %lu parallel words (%u * %lu) (symmetry:%d)\n", singles.size(), parallels.size(), ninputs, parallels.size()/ninputs, use_symmetry);
++		printf("Debug: Pattern conversion: %zu single inputs -> %zu parallel words (%u * %zu) (symmetry:%d)\n", singles.size(), parallels.size(), ninputs, parallels.size()/ninputs, use_symmetry);
+ 	}
+ }
+ 
+@@ -474,7 +474,7 @@
+ {
+ 	if(Verbosity>2)
+ 	{
+-		printf("Creating greedy prefix. Initial prefix size = %lu, max prefix size %u.\n",prefix.size(),maxpairs);
++		printf("Creating greedy prefix. Initial prefix size = %zu, max prefix size %u.\n",prefix.size(),maxpairs);
+ 	}
+ 	ClusterGroup cg(ninputs);
+ 	initAlphabet(ninputs, use_symmetry);
